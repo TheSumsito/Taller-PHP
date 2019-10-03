@@ -1,0 +1,115 @@
+/* ------------------------ IMPORTS ------------------------ */
+@import 'https://fonts.googleapis.com/css?family=Ubuntu&display=swap';
+/* --------------------------------------------------------- */
+
+/* ------------------------ VARIABLES CSS ------------------------ */
+:root {
+    --white: #f9f9f9;
+    --green: #5cb85c;
+    --link: #cccaca;
+    --blue:#428bca;
+    --grey: #757575;
+}
+/* --------------------------------------------------------------- */
+
+/* CAMBIOS GENERALES */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* -------------------------------------------------------------- */
+
+/* ------------------------ MENU CONTAINER ---------------------- */
+.container-menu {
+    display: grid;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+.menu {
+    float: left;
+    position: relative;
+    margin: auto;
+
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+    display: block;
+    padding: 10px 15px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.menu li a:hover {
+    color: var(--link);
+}
+
+.menu > li {
+    float: left;
+}
+
+.submenu {
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    min-width: 140px;
+    position: absolute;
+    background-color: var(--blue);
+    padding: 10px 20px;
+}
+
+.submenu li a:hover {
+    color: var(--link);
+}
+/* -------------------------------------------------------------- */
+
+/* ------------------------ CONTAINER CAROUSEL ------------------ */
+.container-img {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.container-img img {
+    max-width: 100%;
+    grid-column: 1/-1;
+    left: 80%;
+}
+
+.container-img .descripcion-img {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    text-align: center;
+}
+
+.container-img .descripcion-img h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--blue);
+    text-shadow: -4px 4px 0 #000;
+    font-size: 80px;
+}
+
+.container-img .descripcion-img hr {
+    border: 2px solid var(--blue);
+}
+
+.container-img .descripcion-img h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--grey);
+    text-shadow: -2px 3px 0 #000;
+    font-size: 50px;
+}
+
+
+/* -------------------------------------------------------------- */
